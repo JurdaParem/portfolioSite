@@ -184,8 +184,7 @@ Source code not available due to intellectual property.`,
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website built with Angular.',
       technologies: ['Angular', 'TypeScript', 'CSS','Bootstrap','EmailJS'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/yourusername/portfolio',
+      githubUrl: 'https://github.com/JurdaParem/portfolioSite',
       image: 'assets/Portfolio.png'
     }
   ];
