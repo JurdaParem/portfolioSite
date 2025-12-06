@@ -1,0 +1,46 @@
+@if (toastConfig) {
+<div
+      class="position-fixed top-0 start-50 translate-middle-x p-3"
+      style="z-index: 15000; margin-top: 1rem;"
+    >
+      <div
+        id="alertToast"
+        class="toast text-white border-0 align-items-center toast-enhanced"
+        [ngClass]="{
+          'toast-success': toastConfig.type === 'success',
+          'toast-error': toastConfig.type === 'error',
+          'toast-info': toastConfig.type === 'info',
+          'toast-warning': toastConfig.type === 'warning'
+        }"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        #toastElement
+      >
+        <div class="d-flex flex-column">
+          <div class="d-flex">
+            <div class="toast-body">
+              {{ toastConfig.message }}
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white me-2 m-auto"
+              (click)="closeToast()"
+              aria-label="Close"
+            ></button>
+          </div>
+          @if (toastConfig.actionText && toastConfig.action) {
+          <div class="px-3 pb-2">
+            <button 
+              type="button" 
+              class="btn btn-dark btn-sm"
+              (click)="onActionClick()"
+            >
+              {{ toastConfig.actionText }}
+            </button>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+}

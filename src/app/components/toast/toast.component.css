@@ -1,0 +1,65 @@
+.toast-success {
+    background-color: #28a745 !important;
+  }
+  .toast-error {
+    background-color: #dc3545 !important;
+  }
+  .toast-info {
+    background-color: #17a2b8 !important;
+  }
+  .toast-warning {
+    background-color: #ffc107 !important;
+    color: #212529 !important;
+  }
+  .toast-warning .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+  .toast-enhanced {
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .toast-enhanced.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .toast-enhanced.fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+  }
+
+  /* Enhance the animation with a slight scale effect */
+  @keyframes toastFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes toastFadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px) scale(0.95);
+    }
+  }
+
+  .toast-enhanced.animate-in {
+    animation: toastFadeIn 0.3s ease-out forwards;
+  }
+
+  .toast-enhanced.animate-out {
+    animation: toastFadeOut 0.2s ease-in forwards;
+  }

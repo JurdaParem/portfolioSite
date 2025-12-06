@@ -1,0 +1,19 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="nav-container">
+    
+    <button class="mobile-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li><a href="#home" (click)="closeMenu()">Home</a></li>
+      <li><a href="#about" (click)="closeMenu()">About</a></li>
+      <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
+      <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+      <li><a href="#education" (click)="closeMenu()">Education</a></li>
+      <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+    </ul>
+  </div>
+</nav>
