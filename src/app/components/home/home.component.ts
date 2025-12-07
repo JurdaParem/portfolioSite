@@ -130,7 +130,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       degree: 'Bachelor of Information Technology Information Systems [BIT]',
       institution: 'University of Pretoria',
       period: '2023 - 2025',
-      logo: 'assets/UP_Logo.jpg',
+      logo: 'assets/Education/UP_Logo.jpg',
       description: 'Focused on software engineering, algorithms, and web technologies.',
       highlights: [
         'Graduated with Distinction',
@@ -156,7 +156,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       degree: 'National Senior Certificate (NSC)',
       institution: 'Hoërskool Oos Moot',
       period: '2018 - 2022',
-      logo: 'assets/OosMoot_Logo.png',
+      logo: 'assets/Education/OosMoot_Logo.png',
       description: 'Completed with distinction in Information Technoloy and Life Orientation.',
       highlights: [
         'Tshwane North District Top Information Technology Achiever (NSC 2022)',
