@@ -115,7 +115,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       category: 'Tools & Others',
       items: [
-               { name: 'Draw.io', icon: 'assets/Diagrams.net_Logo.svg.png' },
+               { name: 'Draw.io', icon: 'assets/Icons/Diagrams.net_Logo.svg.png' },
         { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
         { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' },
         { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
@@ -178,14 +178,14 @@ Source code not available due to intellectual property.`,
       technologies: ['Angular', '.Net Web API', 'Bootstrap', 'Yoco','Azure','SQL Server','Blockchain','Chart.js','Mailkit'],
       liveUrl: 'https://www.linkedin.com/posts/christopher-cloete-a1aa06263_inf-370-capstone-project-day-2025-im-activity-7387174694535372800-Sj5E?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDBVjYBIsTF4cFrDlCEvkgJfLi8kJ-w7lI',
       videoUrl: 'https://drive.google.com/file/d/1PTUEKX-XTY6xDgMZ8fVpn7l2m6YZgrH0/view?usp=sharing',
-      image: 'assets/pronkPodium.png'
+      image: 'assets/Projects/pronkPodium.png'
     },
     {
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website built with Angular.',
       technologies: ['Angular', 'TypeScript', 'CSS','Bootstrap','EmailJS'],
       githubUrl: 'https://github.com/JurdaParem/portfolioSite',
-      image: 'assets/Portfolio.png'
+      image: 'assets/Projects/Portfolio.png'
     }
   ];
 
